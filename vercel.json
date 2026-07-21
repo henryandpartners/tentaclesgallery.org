@@ -1,0 +1,9 @@
+{
+  "outputDirectory": "build",
+  "cleanUrls": false,
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/:path*/", "destination": "/:path*/index.html" },
+    { "source": "/:path*", "destination": "/:path*.html" }
+  ]
+}
