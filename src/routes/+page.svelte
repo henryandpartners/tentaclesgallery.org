@@ -15,8 +15,14 @@
 		{ slug: 'here-i-come-to-save-the-day', title: 'HERE I COME TO SAVE THE DAY', artist: 'Ho Rui An', year: '2018', cover: 'For-Rui-An_Almost-there-performance-lecture-01642.jpg' },
 		{ slug: 'three-cornered-world', title: 'Three-Cornered World', artist: 'Virada Banjurtrungkajorn', year: '2016', cover: 'Three-Cornered-World-1.jpg' },
 		{ slug: 'two-young-indonesian-artists', title: 'Two Young Indonesian Artists', artist: 'Ajoon Martia Saputri & Reza Zefanya Mulia', year: '2017', cover: 'two-young-indonesian-1.jpg' },
-		{ slug: 'facsimile', title: 'Facsimile', artist: 'Group exhibition', year: '2014', cover: '' },
+		{ slug: 'the-invisible-museum', title: 'The Invisible Museum', artist: 'Group exhibition', year: '2016', cover: 'the-invisible-museum-1.jpg' },
 		{ slug: 'yaowaraj-as-i-note', title: 'Yaowaraj as I note', artist: 'Solo exhibition', year: '2015', cover: 'yao-wa-raj-76x56-3.jpg' },
+	];
+
+	const projects = [
+		{ slug: 'tentacles-tv', title: 'TENTACLES TV', year: '2017', cover: '2017.08.07_create-jpg_fb-event-banner-TV-project.jpg' },
+		{ slug: 'thetip', title: 'TheTip', year: '2015', cover: 'The-Tip.jpg' },
+		{ slug: 'online-party', title: 'Online Party', year: '2020', cover: 'Online-Party.jpg' },
 	];
 
 	const venues = [
@@ -25,6 +31,24 @@
 		{ year: '2015', name: 'K.Mutt Space, Ratchaburi', img: '/images/timeline/kmutt-space-2015.jpg' },
 		{ year: '2016', name: 'Yet Space, Charansanitwong 11', img: '/images/timeline/yet-space-2016.jpg' },
 		{ year: '2016–Now', name: 'Narathiwas 22, Bangkok', img: '/images/timeline/narathiwas-22-2020a.jpg' },
+	];
+
+	const team = [
+		{ name: 'Henry Tan', role: 'Founder' },
+		{ name: 'Be Takerng', role: 'Team Member' },
+		{ name: 'Bank Ngamarunchote', role: 'Team Member' },
+		{ name: 'Nirinthana Koomanee', role: 'Team Member' },
+		{ name: 'Noll', role: 'Team Member' },
+		{ name: 'Jib', role: 'Team Member' },
+		{ name: 'Kedo', role: 'Team Member' },
+		{ name: 'Kuhn', role: 'Team Member' },
+	];
+
+	const collabs = [
+		{ year: '2015', text: 'K.Mutt Space Residency in Ratchaburi with KMUTT.' },
+		{ year: '2016', text: '5 Thai Artists join Taichung ASEAN Square Cultural Exchange, Taiwan.' },
+		{ year: '2016', text: 'Co-organised "ศิลป์อยู่เป็น" education programme by BACC.' },
+		{ year: '2019', text: '"Common Traces" exhibition in Melbourne with TCB Art Inc.' },
 	];
 
 	const heroImages = [
@@ -140,6 +164,65 @@
 				</a>
 			{/each}
 		</div>
+	</div>
+</section>
+
+<!-- === PROJECTS PREVIEW === -->
+<section class="section section-light">
+	<div class="container">
+		<div class="section-label">Projects</div>
+		<div class="section-head-row">
+			<h2>Initiatives & collaborations</h2>
+			<a href="/projects" class="read-more">View all →</a>
+		</div>
+		<p class="section-sub">Special projects, community television, and artist-run spaces.</p>
+		<div class="exhibition-grid">
+			{#each projects as p}
+				<a href="/projects/{p.slug}" class="ex-card">
+					{#if p.cover}
+						<div class="ex-card-cover">
+							<img src="/images/projects/{p.cover}" alt={p.title} loading="lazy" />
+						</div>
+					{/if}
+					<div class="ex-card-body">
+						<span class="ex-year">{p.year}</span>
+						<h3>{p.title}</h3>
+					</div>
+				</a>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- === TEAM === -->
+<section class="section">
+	<div class="container narrow">
+		<div class="section-label">Team</div>
+		<h2>People</h2>
+		<p class="section-sub">The team behind TENTACLES.</p>
+		<div class="team-grid">
+			{#each team as m}
+				<div class="team-card">
+					<div class="team-avatar">{m.name.split(' ').map(w => w[0]).join('')}</div>
+					<h4 class="team-name">{m.name}</h4>
+					<p class="team-role">{m.role}</p>
+				</div>
+			{/each}
+		</div>
+	</div>
+</section>
+
+<!-- === COLLABORATIONS === -->
+<section class="section section-light">
+	<div class="container narrow">
+		<div class="section-label">Collaborations</div>
+		<h2>Partners & exchanges</h2>
+		<p class="section-sub">We have collaborated with partner organisations in Thailand and overseas to facilitate cultural exchange programmes.</p>
+		<ul class="collab-list">
+			{#each collabs as c}
+				<li><strong>{c.year}</strong> — {c.text}</li>
+			{/each}
+		</ul>
 	</div>
 </section>
 
@@ -293,6 +376,24 @@
 	.ex-year { font-family: var(--mono); font-size: .6rem; color: var(--accent); display: block; margin-bottom: .3rem; }
 	.ex-card-body h3 { font-size: .95rem; font-weight: 500; color: var(--black); margin: 0 0 .15rem; line-height: 1.35; }
 	.ex-artist { font-size: .75rem; color: var(--mid-gray); }
+
+	/* === TEAM === */
+	.team-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(100px, 1fr)); gap: 1.25rem; text-align: center; }
+	.team-card { }
+	.team-avatar {
+		width: 56px; height: 56px; border-radius: 50%;
+		display: flex; align-items: center; justify-content: center;
+		background: var(--accent); color: #fff;
+		font-family: var(--mono); font-size: .75rem; font-weight: 600;
+		margin: 0 auto .5rem;
+	}
+	.team-name { font-size: .75rem; font-weight: 600; color: var(--black); margin: 0 0 .1rem; }
+	.team-role { font-size: .65rem; color: var(--mid-gray); margin: 0; font-family: var(--mono); }
+
+	/* === COLLABORATIONS === */
+	.collab-list { list-style: none; padding: 0; }
+	.collab-list li { position: relative; padding-left: 1.5rem; margin-bottom: .65rem; color: var(--dark-gray); font-size: .85rem; line-height: 1.6; }
+	.collab-list li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
 
 	/* === CTA === */
 	.cta-section { padding: 6rem 0; }
