@@ -18,19 +18,18 @@
 <nav class="nav" class:nav-dark={!isHome}>
 	<div class="container nav-inner">
 		<a href="/" class="logo">
-			<span class="logo-icon">◈</span>
-			<span class="logo-text">TENTACLES</span>
-			<span class="logo-dot">•</span>
-			<small class="logo-sub">Gallery</small>
-		</a>
+		<img src="/images/tentacles-logo.png" alt="TENTACLES" class="logo-img" />
+		<img src="/images/tentacles-logo-mobile.png" alt="TENTACLES" class="logo-img-mobile" />
+	</a>
 		<button class="nav-toggle" aria-label="Toggle navigation" onclick={() => navOpen = !navOpen}>
 			<span class="hamburger" class:open={navOpen}></span>
 		</button>
 		<div class="nav-menu" class:nav-menu-open={navOpen}>
-			<a href="/about" class="nav-link">About</a>
+\t\t\t<a href="/program" class="nav-link">Program</a>
 			<a href="/exhibitions" class="nav-link">Exhibitions</a>
 			<a href="/residency" class="nav-link">Residency</a>
-			<a href="/projects" class="nav-link">Projects</a>
+			<a href="/reviews" class="nav-link">Reviews</a>
+			<a href="/about" class="nav-link">About</a>
 		</div>
 	</div>
 </nav>
@@ -46,8 +45,7 @@
 	<div class="container">
 		<div class="footer-grid">
 			<div class="footer-brand">
-				<span class="footer-icon">◈</span>
-				<p class="footer-title">TENTACLES</p>
+				<img src="/images/tentacles-logo.png" alt="TENTACLES" class="footer-logo" />
 				<p class="footer-sub">Art space, residency, and community gallery in Bangkok since 2014.</p>
 			</div>
 			<div class="footer-links">
@@ -55,6 +53,7 @@
 				<a href="/about">About</a>
 				<a href="/exhibitions">Exhibitions</a>
 				<a href="/residency">Residency</a>
+				<a href="/reviews">Reviews</a>
 				<a href="/projects">Projects</a>
 			</div>
 			<div class="footer-links">
@@ -64,7 +63,7 @@
 			</div>
 		</div>
 		<div class="footer-bottom">
-			<p>TENTACLES Gallery • Est. 2014</p>
+			<p>TENTACLES • tentaclesgallery.org</p>
 		</div>
 	</div>
 </footer>
@@ -82,10 +81,7 @@
 		background: rgba(26,26,26,.95);
 		border-bottom: 1px solid rgba(255,255,255,.08);
 	}
-	.nav-dark .logo-text,
-	.nav-dark .logo-sub,
 	.nav-dark .nav-link { color: rgba(255,255,255,.85); }
-	.nav-dark .logo-icon { color: var(--accent); }
 	.nav-dark .nav-link:hover { color: var(--accent); opacity: 1; }
 	.nav-dark .hamburger,
 	.nav-dark .hamburger::before,
@@ -95,11 +91,9 @@
 		display: flex; align-items: center; justify-content: space-between;
 		height: 64px;
 	}
-	.logo { display: flex; align-items: baseline; gap: .25rem; }
-	.logo-icon { color: var(--accent); font-size: .8rem; }
-	.logo-text { font-size: .85rem; font-weight: 500; letter-spacing: .15em; text-transform: uppercase; color: var(--black); }
-	.logo-dot { color: var(--accent); font-size: .5rem; }
-	.logo-sub { font-size: .65rem; color: var(--mid-gray); letter-spacing: .04em; }
+	.logo { display: flex; align-items: center; }
+	.logo-img { height: 28px; width: auto; display: block; }
+	.logo-img-mobile { display: none; height: 24px; width: auto; }
 
 	.nav-menu { display: flex; align-items: center; gap: 2rem; }
 	.nav-link {
@@ -138,6 +132,7 @@
 		gap: 3rem;
 	}
 	.footer-icon { color: var(--accent); font-size: .9rem; }
+	.footer-logo { height: 32px; width: auto; margin-bottom: .75rem; }
 	.footer-title { font-size: 1.1rem; font-weight: 500; letter-spacing: .12em; text-transform: uppercase; color: var(--white); margin: .5rem 0 .25rem; }
 	.footer-sub { font-size: .8rem; color: rgba(255,255,255,.5); line-height: 1.6; }
 	.footer-heading { font-family: var(--mono); font-size: .6rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
@@ -147,11 +142,13 @@
 	.footer-bottom { border-top: 1px solid rgba(255,255,255,.08); padding-top: 1.5rem; margin-top: 3rem; text-align: center; }
 	.footer-bottom p { font-family: var(--mono); font-size: .65rem; color: rgba(255,255,255,.35); }
 
-	@media (max-width: 768px) {
-		.nav-inner { height: 56px; }
-		.nav-spacer { height: 56px; }
-		.nav-toggle { display: block; }
-		.nav-menu {
+@media (max-width: 768px) {
+	.nav-inner { height: 56px; }
+	.nav-spacer { height: 56px; }
+	.nav-toggle { display: block; }
+	.logo-img { display: none; }
+	.logo-img-mobile { display: block; }
+	.nav-menu {
 			position: fixed; top: 56px; left: 0; right: 0;
 			background: rgba(255,255,255,.98);
 			backdrop-filter: blur(14px);

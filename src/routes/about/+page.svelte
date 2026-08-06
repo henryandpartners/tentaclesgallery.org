@@ -63,7 +63,7 @@
 
 	<a href="mailto:tentaclesgallery@gmail.com" class="contact-btn">tentaclesgallery@gmail.com</a>
 
-	<p class="address">Narathiwas 22, Bangkok<br>tentaclesgallery.com since 2014</p>
+	<p class="address">Narathiwas 22, Bangkok<br>tentaclesgallery.org since 2014</p>
 </div>
 
 <style>

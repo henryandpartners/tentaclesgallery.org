@@ -14,7 +14,7 @@
 	const exhibitions = [
 		{ slug: 'here-i-come-to-save-the-day', title: 'HERE I COME TO SAVE THE DAY', artist: 'Ho Rui An', year: '2018', cover: 'For-Rui-An_Almost-there-performance-lecture-01642.jpg' },
 		{ slug: 'three-cornered-world', title: 'Three-Cornered World', artist: 'Virada Banjurtrungkajorn', year: '2016', cover: 'Three-Cornered-World-1.jpg' },
-		{ slug: 'two-young-indonesian-artists', title: 'Two Young Indonesian Artists', artist: 'Ajoon Martia Saputri & Reza Zefanya Mulia', year: '2017', cover: 'two-young-indonesian-1.jpg' },
+		{ slug: 'two-young-indonesian-artists', title: 'Two Young Indonesian Artists at Tentacles', artist: 'Ajoon Martia Saputri & Reza Zefanya Mulia', year: '2017', cover: 'two-young-indonesian-1.jpg' },
 		{ slug: 'the-invisible-museum', title: 'The Invisible Museum', artist: 'Group exhibition', year: '2016', cover: 'the-invisible-museum-1.jpg' },
 		{ slug: 'yaowaraj-as-i-note', title: 'Yaowaraj as I note', artist: 'Solo exhibition', year: '2015', cover: 'yao-wa-raj-76x56-3.jpg' },
 	];
@@ -226,6 +226,50 @@
 	</div>
 </section>
 
+<!-- === REVIEWS PREVIEW === -->
+<section class="section">
+	<div class="container narrow">
+		<div class="section-label">Reviews</div>
+		<div class="section-head-row">
+			<h2>Critical writing</h2>
+			<a href="/reviews" class="read-more">View all →</a>
+		</div>
+		<p class="section-sub">Reviews from Bangkok's contemporary art scene and beyond — our community's critical perspectives.</p>
+		<div class="review-preview-grid">
+			<a href="/reviews/review-early-years-project-1-thisorder" class="review-preview-card">
+				<span class="rp-date">2018</span>
+				<h4>EARLY YEARS PROJECT #1: Thisorder</h4>
+				<p>Thasnai Sethaseree @ TENTACLES</p>
+			</a>
+			<a href="/reviews/review-the-game-viet-nam-by-le-brothers" class="review-preview-card">
+				<span class="rp-date">2017</span>
+				<h4>The Game | Viet Nam by LE Brothers</h4>
+				<p>Performance & video installation @ TENTACLES</p>
+			</a>
+			<a href="/reviews/review-displaced-bacc-by-jakkai-siributr" class="review-preview-card">
+				<span class="rp-date">2018</span>
+				<h4>Displaced @ BACC by Jakkai Siributr</h4>
+				<p>Textile art addressing stateless peoples</p>
+			</a>
+			<a href="/reviews/review-ruin" class="review-preview-card">
+				<span class="rp-date">2018</span>
+				<h4>Ruin by Pannaphan Yodmanee</h4>
+				<p>Mixed-media paintings exploring decay & memory</p>
+			</a>
+			<a href="/reviews/review-alive-bangkok-city-city-gallery-by-alex-face" class="review-preview-card">
+				<span class="rp-date">2017</span>
+				<h4>ALIVE @ Bangkok CityCity by Alex Face</h4>
+				<p>Street art icon's gallery exhibition</p>
+			</a>
+			<a href="/reviews/review-no-regret-exhibition" class="review-preview-card">
+				<span class="rp-date">2017</span>
+				<h4>No Regret @ Cartel Artspace</h4>
+				<p>Anchalii Anantawat solo exhibition</p>
+			</a>
+		</div>
+	</div>
+</section>
+
 <!-- === CTA === -->
 <section class="section section-dark cta-section">
 	<div class="container narrow" style="text-align:center">
@@ -397,6 +441,20 @@
 
 	/* === CTA === */
 	.cta-section { padding: 6rem 0; }
+
+	/* === REVIEWS PREVIEW === */
+	.review-preview-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1rem; }
+	.review-preview-card {
+		display: block;
+		padding: 1.25rem;
+		border: 1px solid var(--light-gray);
+		background: var(--white);
+		transition: all .25s;
+	}
+	.review-preview-card:hover { border-color: var(--accent); box-shadow: 0 2px 12px rgba(0,0,0,.06); }
+	.rp-date { font-family: var(--mono); font-size: .6rem; color: var(--accent); display: block; margin-bottom: .3rem; }
+	.review-preview-card h4 { font-size: .85rem; font-weight: 500; color: var(--black); margin: 0 0 .15rem; line-height: 1.4; }
+	.review-preview-card p { font-size: .7rem; color: var(--mid-gray); margin: 0; }
 
 	@media (max-width: 768px) {
 		.hero { min-height: 70vh; }
