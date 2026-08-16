@@ -47,6 +47,33 @@ export const exhibitions: Exhibition[] = [
 		video: ''
 	},
 	{
+		slug: 'the-objects-i-follow',
+		title: 'The Objects I Follow / The Stories I Swallow',
+		year: '2019',
+		artists: 'Florence Lam, Tim Löhde, Arisa Purkpong, Thammarin Sengsong & Thapong Srisai',
+		desc: '13 June – 7 July 2019. Tentacles Gallery, N22.',
+		images: ['the-objects-i-follow-1.jpg'],
+		video: ''
+	},
+	{
+		slug: 'bedtime-story',
+		title: 'Bedtime story',
+		year: '2019',
+		artists: 'Li Zhiyong',
+		desc: '13 – 18 June 2019. Presented as part of Li Zhiyong\u2019s residency at Tentacles.',
+		images: ['bedtime-story-1.jpg'],
+		video: ''
+	},
+	{
+		slug: 'fantasy-or-illusion',
+		title: 'Fantasy or Illusion',
+		year: '2019',
+		artists: 'Luo An Sheng & Chakriya Soi-som',
+		desc: '30 August – 5 September 2019. Luo An Sheng (artist in exchange program from Taiwan) and Chakriya Soi-som (Thai artist participating in the Craft Taitung exchange program, Taiwan).',
+		images: ['fantasy-or-illusion-1.jpg'],
+		video: ''
+	},
+	{
 		slug: 'religion-of-mind',
 		title: 'Religion of Mind',
 		year: '2018',
@@ -65,12 +92,30 @@ export const exhibitions: Exhibition[] = [
 		video: ''
 	},
 	{
+		slug: 'the-lost-wizards',
+		title: 'The Lost Wizards / ฤาษีคุณเป็นใคร',
+		year: '2017',
+		artists: 'Francis Wilmer, Harry Virtanen & Chonlada Lynn Bennett',
+		desc: 'An exhibition & documentary film. 6 January – 27 January 2017.',
+		images: ['the-lost-wizards-1.jpg'],
+		video: ''
+	},
+	{
 		slug: 'unstable-terrain',
 		title: 'Unstable Terrain',
 		year: '2016',
 		artists: 'Nattapon Sawasdee & Saksit Khunkitti (\u0e13\u0e31\u0e10\u0e1e\u0e25 \u0e2a\u0e27\u0e31\u0e2a\u0e14\u0e35 & \u0e28\u0e31\u0e01\u0e14\u0e34\u0e4c\u0e2a\u0e34\u0e17\u0e18\u0e34\u0e4c \u0e04\u0e38\u0e13\u0e01\u0e34\u0e15\u0e15\u0e34)',
 		desc: 'Opening reception: 25 November 2016, 6:00 p.m. Exhibition period: 25 November – 25 December 2016. Artist Talk: 8 December 2016, 2:00 p.m. Nattapon Sawasdee and Saksit Khunkitti presented new work exploring ideas of stability through abstract language, using contrasting materials and designs. Saksit\u2019s work comprises heavy construction materials and architectural surfaces, while Nattapon focuses on light and fragile, delicate materials — two connected investigations expressed through different visual idioms.',
 		images: ['unstable-terrain-1.jpg', 'unstable-terrain-2.jpg', 'unstable-terrain-3.jpg', 'unstable-terrain-4.jpg', 'unstable-terrain-5.jpg', 'unstable-terrain-6.jpg'],
+		video: ''
+	},
+	{
+		slug: 'on-off',
+		title: 'ON/OFF',
+		year: '2016',
+		artists: 'Chee Suphatanasilpa',
+		desc: '23 – 25 September 2016.',
+		images: [],
 		video: ''
 	},
 	{
