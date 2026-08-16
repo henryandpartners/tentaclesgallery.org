@@ -34,6 +34,10 @@
 	<div class="container narrow detail-body">
 		<p class="desc">{ex.desc}</p>
 
+		{#if ex.residency}
+			<a href="/residency/{ex.residency}" class="residency-link">View {ex.artists.split('&')[0].trim()}&rsquo;s residency →</a>
+		{/if}
+
 		{#if ex.video}
 			<div class="video-wrapper">
 				<iframe src="https://www.youtube.com/embed/{ex.video}" title="YouTube video for {ex.title}" frameborder="0" allowfullscreen></iframe>
@@ -95,6 +99,9 @@
 	.narrow { max-width: 720px; }
 	.detail-body { padding: 2rem 1.5rem 4rem; }
 	.desc { font-size: .95rem; line-height: 1.8; color: var(--dark-gray); margin-bottom: 2rem; }
+
+	.residency-link { display: inline-block; font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); text-decoration: none; margin: -1rem 0 2rem; }
+	.residency-link:hover { text-decoration: underline; }
 
 	.video-wrapper { position: relative; padding-bottom: 56.25%; height: 0; margin-bottom: 2rem; }
 	.video-wrapper iframe { position: absolute; inset: 0; width: 100%; height: 100%; }

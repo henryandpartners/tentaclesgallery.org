@@ -6,6 +6,7 @@ export interface Exhibition {
 	desc: string;
 	images: string[];
 	video: string;
+	residency?: string;
 }
 
 // Source of truth: tentaclesgallery.org (verified against live WordPress site, Aug 2026).
@@ -17,7 +18,8 @@ export const exhibitions: Exhibition[] = [
 		artists: 'Kai (Kari) Altmann',
 		desc: 'Opening: 19 October, 6:00 p.m. Exhibition period: 19 October – 8 November 2019. Kai Altmann presents one of her identities, Soft Mobility, as a display of objects, images and performance. Kai was an invited resident at Tentacles via the Asian Cultural Council (NYC) for two months, developing materials for this presentation — part of her ongoing work Soft Mobility (2014–present). Soft Mobility was originally commissioned by the New Museum in New York for its First Look series in 2014, and has been presented as a solo show at Forde in Geneva in 2018.',
 		images: ['soft-mobility-1.jpg', 'soft-mobility-2.jpg', 'soft-mobility-3.jpg', 'soft-mobility-4.jpg', 'soft-mobility-5.jpg', 'soft-mobility-6.jpg'],
-		video: ''
+		video: '',
+		residency: 'kai-altmann'
 	},
 	{
 		slug: 'fallen-cycle',
@@ -35,7 +37,8 @@ export const exhibitions: Exhibition[] = [
 		artists: 'Ge Yulu',
 		desc: '30 August – 4 September 2019. Opening: Friday 30 August 2019, 6:00 p.m. Tentacles Gallery, N22. Artist: Ge Yulu (Artist-in-Residency program). "Facsimile is the important method for art study by reproducing the artwork to study the technique and taking time to understand that artwork." The exhibition presented Ge Yulu\u2019s work during his residency — he explored the surrounding neighbourhood, interested in the relationship between people and the artworks in their houses, reproducing the artwork in others\u2019 private spaces from a distance as a way of learning and understanding their lives.',
 		images: ['facsimile-1.jpg', 'facsimile-2.jpg', 'facsimile-3.jpg', 'facsimile-4.jpg'],
-		video: 'Tz-62_akEh0'
+		video: 'Tz-62_akEh0',
+		residency: 'ge-yulu'
 	},
 	{
 		slug: 'nothing-here',
@@ -62,7 +65,8 @@ export const exhibitions: Exhibition[] = [
 		artists: 'Li Zhiyong',
 		desc: '13 – 18 June 2019. Presented as part of Li Zhiyong\u2019s residency at Tentacles.',
 		images: ['bedtime-story-1.jpg'],
-		video: ''
+		video: '',
+		residency: 'li-zhiyong'
 	},
 	{
 		slug: 'fantasy-or-illusion',
