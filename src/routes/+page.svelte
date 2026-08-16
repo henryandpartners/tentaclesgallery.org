@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { exhibitions as allExhibitions } from '$lib/exhibitions';
+
 	const residencies = [
 		{ slug: 'argya-dhyaksa', name: 'Argya Dhyaksa', year: '2020', country: 'Indonesia' },
 		{ slug: 'kong-dara', name: 'Kong Dara', year: '2015', country: 'Cambodia' },
@@ -11,13 +13,10 @@
 		{ slug: 'hernan-salvo', name: 'Hernan Salvo', year: '2017', country: 'Mexico' },
 	];
 
-	const exhibitions = [
-		{ slug: 'here-i-come-to-save-the-day', title: 'HERE I COME TO SAVE THE DAY', artist: 'Ho Rui An', year: '2018', cover: 'For-Rui-An_Almost-there-performance-lecture-01642.jpg' },
-		{ slug: 'three-cornered-world', title: 'Three-Cornered World', artist: 'Virada Banjurtrungkajorn', year: '2016', cover: 'Three-Cornered-World-1.jpg' },
-		{ slug: 'two-young-indonesian-artists', title: 'Two Young Indonesian Artists at Tentacles', artist: 'Ajoon Martia Saputri & Reza Zefanya Mulia', year: '2017', cover: 'two-young-indonesian-1.jpg' },
-		{ slug: 'the-invisible-museum', title: 'The Invisible Museum', artist: 'Group exhibition', year: '2016', cover: 'the-invisible-museum-1.jpg' },
-		{ slug: 'yaowaraj-as-i-note', title: 'Yaowaraj as I note', artist: 'Solo exhibition', year: '2015', cover: 'yao-wa-raj-76x56-3.jpg' },
-	];
+	const exhibitions = allExhibitions
+		.map((ex) => ({ slug: ex.slug, title: ex.title, artist: ex.artists, year: ex.year, cover: ex.images[0] ?? '' }))
+		.filter((ex) => ex.cover)
+		.slice(0, 6);
 
 	const projects = [
 		{ slug: 'tentacles-tv', title: 'TENTACLES TV', year: '2017', cover: '2017.08.07_create-jpg_fb-event-banner-TV-project.jpg' },
@@ -52,8 +51,9 @@
 	];
 
 	const heroImages = [
-		'/images/exhibitions/IMG_8944-1536x1024.jpg',
-		'/images/exhibitions/IMG_8954-1536x1024.jpg',
+		'/images/exhibitions/three-cornered-world-1.jpg',
+		'/images/exhibitions/unstable-terrain-1.jpg',
+		'/images/exhibitions/soft-mobility-1.jpg',
 	];
 
 	// Pick a random hero image on each build
