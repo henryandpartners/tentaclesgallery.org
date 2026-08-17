@@ -1,17 +1,6 @@
 <script lang="ts">
 	import { exhibitions as allExhibitions } from '$lib/exhibitions';
-
-	const residencies = [
-		{ slug: 'argya-dhyaksa', name: 'Argya Dhyaksa', year: '2020', country: 'Indonesia' },
-		{ slug: 'kong-dara', name: 'Kong Dara', year: '2015', country: 'Cambodia' },
-		{ slug: 'kate-bae', name: 'Kate Bae', year: '2017', country: 'South Korea' },
-		{ slug: 'hiromi-tsuha', name: 'Hiromi Tsuha', year: '2017', country: 'Japan (Okinawa)' },
-		{ slug: 'jane-cheng', name: 'Jane Q Cheng', year: '2018', country: 'Singapore' },
-		{ slug: 'ramesh-ramakrishnah', name: 'Ramesh Ramakrishnah', year: '2019', country: 'Mauritius' },
-		{ slug: 'ge-yulu', name: 'Ge Yulu', year: '2019', country: 'China' },
-		{ slug: 'reza-zefanya-mulia', name: 'Reza Zefanya Mulia', year: '2017', country: 'Indonesia' },
-		{ slug: 'hernan-salvo', name: 'Hernan Salvo', year: '2017', country: 'Mexico' },
-	];
+	import { residencies } from '$lib/residencies';
 
 	const exhibitions = allExhibitions
 		.map((ex) => ({ slug: ex.slug, title: ex.title, artist: ex.artists, year: ex.year, cover: ex.images[0] ?? '' }))
@@ -126,7 +115,7 @@
 			<h2>International artists</h2>
 			<a href="/residency" class="read-more">View all →</a>
 		</div>
-		<p class="section-sub">Since 2015, TENTACLES has hosted 36 artists from 15+ countries.</p>
+		<p class="section-sub">Since 2015, TENTACLES has hosted 16 artists from 12 countries.</p>
 		<div class="artist-grid">
 			{#each residencies as r}
 				<a href="/residency/{r.slug}" class="artist-card">

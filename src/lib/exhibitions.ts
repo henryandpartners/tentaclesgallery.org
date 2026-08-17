@@ -119,7 +119,7 @@ export const exhibitions: Exhibition[] = [
 		year: '2016',
 		artists: 'Chee Suphatanasilpa',
 		desc: '23 – 25 September 2016.',
-		images: [],
+		images: ['13555875_10207700712808181_1076068041_o.jpg'],
 		video: ''
 	},
 	{

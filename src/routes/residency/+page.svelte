@@ -1,42 +1,5 @@
 <script lang="ts">
-	const residencies = [
-		{ slug: 'argya-dhyaksa', name: 'Argya Dhyaksa', year: '2020', country: 'Indonesia' },
-		{ slug: 'ramesh-ramakrishnah', name: 'Ramesh Ramakrishnah', year: '2019', country: 'Mauritius' },
-		{ slug: 'li-zhiyong', name: 'Li Zhiyong', year: '2019', country: 'China' },
-		{ slug: 'yusuke-shibata', name: 'Yusuke Shibata', year: '2019', country: 'Japan' },
-		{ slug: 'ge-yulu', name: 'Ge Yulu', year: '2019', country: 'China' },
-		{ slug: 'magdalena-correa', name: 'Magdalena Correa', year: '2019', country: 'Colombia' },
-		{ slug: 'kai-altmann', name: 'Kai Altmann', year: '2019', country: 'USA' },
-		{ slug: 'ip-wai-lung', name: 'Ip Wai Lung', year: '2019', country: 'Hong Kong' },
-		{ slug: 'gemini-kim', name: 'Gemini Kim', year: '2019', country: 'South Korea / USA' },
-		{ slug: 'scott-anderson', name: 'Scott Anderson', year: '2018', country: 'New Zealand' },
-		{ slug: 'abijan-gupta', name: 'Abijan Gupta', year: '2018', country: 'India' },
-		{ slug: 'jane-cheng', name: 'Jane Q Cheng', year: '2018', country: 'Singapore' },
-		{ slug: 'yeon-jeong', name: 'Yeon Jeong', year: '2018', country: 'South Korea' },
-		{ slug: 'joned', name: 'Joned', year: '2018', country: 'Thailand' },
-		{ slug: 'rar-edition', name: 'RAR Edition', year: '2018', country: 'Thailand' },
-		{ slug: 'karl-ingar-roys', name: 'Karl Ingar Roys', year: '2018', country: 'Norway' },
-		{ slug: 'liuboda', name: 'LiuBoda', year: '2018', country: 'China' },
-		{ slug: 'linh-phuong-nguyen', name: 'Linh Phuong Nguyen', year: '2018', country: 'Vietnam' },
-		{ slug: 'sunya', name: 'Sunya', year: '2018', country: 'Thailand' },
-		{ slug: 'catherine-ellis', name: 'Catherine Ellis', year: '2018', country: 'USA' },
-		{ slug: 'ajoon-martia-saputri', name: 'Ajoon Martia Saputri', year: '2017', country: 'Indonesia' },
-		{ slug: 'reza-zefanya-mulia', name: 'Reza Zefanya Mulia', year: '2017', country: 'Indonesia' },
-		{ slug: 'cyril-shanna', name: 'Cyril & Shanna', year: '2017', country: 'International' },
-		{ slug: 'din-chan', name: 'Din Chan', year: '2017', country: 'Thailand' },
-		{ slug: 'flounder-lee', name: 'Flounder Lee', year: '2017', country: 'USA' },
-		{ slug: 'garima-gupta', name: 'Garima Gupta', year: '2017', country: 'India' },
-		{ slug: 'hernan-salvo', name: 'Hernan Salvo', year: '2017', country: 'Mexico' },
-		{ slug: 'ho-rui-an', name: 'Ho Rui An', year: '2017', country: 'Singapore' },
-		{ slug: 'hiromi-tsuha', name: 'Hiromi Tsuha', year: '2017', country: 'Japan (Okinawa)' },
-		{ slug: 'justin-loke', name: 'Justin Loke', year: '2017', country: 'Singapore' },
-		{ slug: 'kate-bae', name: 'Kate Bae', year: '2017', country: 'South Korea' },
-		{ slug: 'yosefa-muhammad', name: 'Yosefa Aulia & Muhammad Vilhamy', year: '2016', country: 'Indonesia' },
-		{ slug: 'kong-dara', name: 'Kong Dara', year: '2015', country: 'Cambodia' },
-		{ slug: 'amy-wang', name: 'Amy Wang / Jhong ChengShiu', year: '2015', country: 'Taiwan' },
-		{ slug: 'david-delgado', name: 'David Delgado', year: '2015', country: 'Colombia' },
-		{ slug: 'pohan-chang', name: 'Pohan Chang', year: '2015', country: 'Taiwan' },
-	];
+	import { residencies } from '$lib/residencies';
 
 	let years = $derived([...new Set(residencies.map(r => r.year))].sort().reverse());
 	let selected = $state('all');
@@ -51,7 +14,7 @@
 	<div class="container narrow">
 		<div class="section-label">Program</div>
 		<h1>Residency</h1>
-		<p class="subtitle">International artist-in-residence program — 36 artists from 15+ countries since 2015.</p>
+		<p class="subtitle">International artist-in-residence program — 16 artists from 12 countries since 2015.</p>
 
 		<div class="filters">
 			<button class="filter" class:active={selected === 'all'} onclick={() => selected = 'all'}>All</button>
