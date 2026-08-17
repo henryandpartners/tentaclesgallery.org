@@ -166,5 +166,71 @@ export const exhibitions: Exhibition[] = [
 		desc: '31 May – 9 July 2014. Vatcharapong observes iconic figures in popular media, turns them into wire sculptures that look almost like doodles, then positions them in contexts of urban banal reality. The results are humorous yet challenging combinations of art and everyday life. This was his first solo exhibition. Vatcharapong Tungpongpiboon (b. 1989) holds a B.A. in Fine Arts from Bangkok University.',
 		images: ['little-three-some-1.jpg', 'little-three-some-2.jpg', 'little-three-some-3.jpg', 'little-three-some-4.jpg', 'little-three-some-5.jpg', 'little-three-some-6.jpg'],
 		video: ''
-	}
+	},
+
+	{
+		slug: 'the-invisible-museum',
+		title: 'The Invisible Museum',
+		year: '2018',
+		artists: 'Group exhibition',
+		desc: 'A conceptual exhibition questioning the institutional frameworks of museums and the visibility of underrepresented art practices. Through speculative installations and archival interventions, the participating artists reimagined what a museum could be outside colonial and capitalist structures.',
+		images: ['the-invisible-museum-1.jpg', 'the-invisible-museum-1-1.jpg'],
+		video: '',
+	},
+	{
+		slug: 'handle-with-care',
+		title: 'Handle with care',
+		year: '2018',
+		artists: 'Group exhibition',
+		desc: 'A delicate exhibition about fragility, preservation, and the care required in handling art, memory, and relationships. Works incorporated found objects, textiles, and ephemeral materials.',
+		images: ['me-with-tree.jpg'],
+		video: '',
+	},
+	{
+		slug: 'here-i-come-to-save-the-day',
+		title: 'HERE I COME TO SAVE THE DAY',
+		year: '2018',
+		artists: 'Ho Rui An (Singapore)',
+		desc: 'A solo presentation by Singaporean artist Ho Rui An critically examining hero narratives, saviour complexes, and the geopolitics of visual culture in Southeast Asia. Through video, performance, and installation, Ho deconstructed the myth of the singular saviour.',
+		images: ['For-Rui-An_Almost-there-performance-lecture-01642.jpg', 'horuian.png', 'here-i-come-to-save-day-1.jpg', 'here-i-come-to-save-day-2.jpg'],
+		video: '',
+		residency: 'ho-rui-an'
+	},
+	{
+		slug: 'lintas-batas',
+		title: 'LINTAS-BATAS',
+		year: '2017',
+		artists: 'Group exhibition',
+		desc: '"Crossing Borders" — a group exhibition celebrating transnational artistic exchange and hybrid cultural identities. Featuring artists from across Southeast Asia and beyond, exploring themes of migration, diaspora, and cultural fluidity.',
+		images: ['lintas-batas-1.jpg'],
+		video: '',
+	},
+	{
+		slug: 'two-young-indonesian-artists',
+		title: 'Two Young Indonesian Artists at Tentacles',
+		year: '2017',
+		artists: 'Ajoon Martia Saputri & Reza Zefanya Mulia',
+		desc: 'A dual showcase of two emerging voices from Indonesia’s contemporary art scene. Ajoon Martia Saputri presented intricate drawings exploring gender, myth, and post-colonial identity through Javanese folklore and feminist critique. Reza Zefanya Mulia exhibited figurative paintings examining youth culture and identity in contemporary Indonesia.',
+		images: ['two-young-indonesian-1.jpg', 'two-young-indonesian-2.jpg', 'two-young-indonesian-3.jpg', 'two-young-indonesian-4.jpg', 'two-young-indonesian-5.jpg'],
+		video: '',
+		residency: 'ajoon-martia-saputri'
+	},
+	{
+		slug: 'defendant-of-love',
+		title: 'จำเลยรัก — Defendant of Love',
+		year: '2017',
+		artists: 'Solo exhibition',
+		desc: 'A solo exhibition interrogating love, vulnerability, and the courtroom of human emotion through installation and performance. The artist staged a metaphorical trial where love itself was both prosecutor and defendant.',
+		images: ['2017.03.31_jpg_graphic-logo-จำเลยรัก.jpg'],
+		video: '',
+	},
+	{
+		slug: 'diversity-via-nature',
+		title: 'Diversity Via Nature: Religion, Gender or Art?',
+		year: '2016',
+		artists: 'Group exhibition',
+		desc: 'A cross-cultural dialogue on how nature informs identity, spirituality, and artistic expression across Southeast Asia, examining the intersection of ecology, belief systems, and gender politics.',
+		images: ['The-overlap-of-timing-in-nature1.jpg', 'The-overlap-of-timing-in-nature2.jpg', 'The-overlap-of-timing-in-nature3.jpg', 'The-overlap-of-timing-in-nature4.jpg'],
+		video: '',
+	},
 ];
